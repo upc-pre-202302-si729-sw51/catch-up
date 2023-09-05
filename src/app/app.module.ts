@@ -14,11 +14,15 @@ import {MatCardModule} from "@angular/material/card";
 import {MatMenuModule} from "@angular/material/menu";
 import {NgOptimizedImage} from "@angular/common";
 import { MainContentComponent } from './news/components/main-content/main-content.component';
+import { NavComponent } from './news/components/nav/nav.component';
+import {LogoApiService} from "./shared/services/logo-api.service";
+import {NewsApiService} from "./news/services/news-api.service";
 
 @NgModule({
   declarations: [
     AppComponent,
-    MainContentComponent
+    MainContentComponent,
+    NavComponent
   ],
   imports: [
     BrowserModule,
@@ -34,7 +38,7 @@ import { MainContentComponent } from './news/components/main-content/main-conten
     MatMenuModule,
     NgOptimizedImage
   ],
-  providers: [],
+  providers: [LogoApiService, NewsApiService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
