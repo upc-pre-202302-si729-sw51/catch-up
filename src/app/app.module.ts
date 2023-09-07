@@ -18,6 +18,7 @@ import { NavComponent } from './news/components/nav/nav.component';
 import {LogoApiService} from "./shared/services/logo-api.service";
 import {NewsApiService} from "./news/services/news-api.service";
 import { FooterContentComponent } from './news/components/footer-content/footer-content.component';
+import {BrowserAnimationsModule} from "@angular/platform-browser/animations";
 
 @NgModule({
   declarations: [
@@ -28,6 +29,7 @@ import { FooterContentComponent } from './news/components/footer-content/footer-
   ],
   imports: [
     BrowserModule,
+    BrowserAnimationsModule,
     HttpClientModule,
     LayoutModule,
     MatToolbarModule,
